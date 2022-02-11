@@ -1,0 +1,5 @@
+<article class="post" id="post{{idx}}" *ngFor="let item of data; let idx=index">
+  <app-oprea-header [item]="item" (delete)="doDelete($event)"></app-oprea-header>
+  <app-oprea-body [item]="item"></app-oprea-body>
+
+  </article>
